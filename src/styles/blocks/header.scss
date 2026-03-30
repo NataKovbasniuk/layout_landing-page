@@ -1,7 +1,12 @@
 .header {
-  background-image: url(/src/images/header-bg-laptop.png);
+  background-image: url(/src/images/header-bg-mobile.png);
   background-position: center;
   background-size: cover;
+
+  @include on-tablet {
+    background-image: url(/src/images/header-bg-laptop.png);
+    background-position: center;
+  }
 
   &__content {
     position: relative;
@@ -20,9 +25,8 @@
     bottom: 88px;
     left: 0;
 
-    margin: 0;
-
-    font-size: 36px;
+    font-size: 46px;
+    white-space: nowrap;
     font-weight: 700;
     font-style: normal;
     line-height: 100%;
@@ -31,7 +35,14 @@
     letter-spacing: -1.5px;
 
     @include on-tablet {
-      font-size: 40px;
+      bottom: 130px;
+      font-size: 64px;
+
+    }
+
+    @include on-desktop {
+      bottom: 203px;
+      font-size: 80px;
     }
   }
 

@@ -21,6 +21,7 @@
 
     @include on-tablet {
       grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
     }
   }
 
@@ -51,6 +52,7 @@
   &__textarea {
     resize: none;
     height: 120px;
+    border-radius: 16px;
   }
 
   &__button {
@@ -79,10 +81,25 @@
     font-weight: bold;
   }
 
-  &__link,
-  &__text {
-    margin: 0;
-    color: $main-text-color;
-    text-decoration: none;
-  }
+    &__link {
+      margin: 0;
+      color: $main-text-color;
+      text-decoration: none;
+    }
+
+    &__text {
+      margin: 0;
+      color: $main-text-color;
+      text-decoration: none;
+
+      a {
+        color: $main-text-color;
+        text-decoration: underline;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
 }

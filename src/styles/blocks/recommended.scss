@@ -7,6 +7,11 @@
 
   &__product {
     grid-column: 1 / -1;
+    transition: transform $effectDuration ease;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
 
     @include on-tablet {
       grid-column: 2 / -2;
@@ -15,5 +20,17 @@
     @include on-desktop {
       grid-column: span 4;
     }
+  }
+}
+
+.product {
+  &__photo {
+    display: block;
+    width: 100%;
+    transition: transform $effectDuration ease;
+  }
+
+  &:hover &__photo {
+    transform: scale(1.05);
   }
 }
