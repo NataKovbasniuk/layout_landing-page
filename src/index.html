@@ -344,7 +344,10 @@
                   class="contact__form"
                   action="#"
                   method="post"
-                  onsubmit="this.reset(); return false;"
+                  onsubmit="
+                    this.reset();
+                    return false;
+                  "
                 >
                   <input
                     class="contact__input"
@@ -399,11 +402,16 @@
                 <div class="contact__item">
                   <p class="contact__label">Address</p>
                   <p class="contact__text">
-                    <a href="https://share.google/35WaJ1hVRoR75Gjxn" target="_blank"
-                    rel="noopener noreferrer">
-  400 first ave.<br>
-  suite 700<br>
-  Minneapolis, MN 55401
+                    <a
+                      href="https://share.google/35WaJ1hVRoR75Gjxn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      400 first ave.
+                      <br />
+                      suite 700
+                      <br />
+                      Minneapolis, MN 55401
                     </a>
                   </p>
                 </div>

@@ -81,25 +81,24 @@
     font-weight: bold;
   }
 
-    &__link {
-      margin: 0;
+  &__link {
+    margin: 0;
+    color: $main-text-color;
+    text-decoration: none;
+  }
+
+  &__text {
+    margin: 0;
+    color: $main-text-color;
+    text-decoration: none;
+
+    a {
       color: $main-text-color;
-      text-decoration: none;
-    }
+      text-decoration: underline;
 
-    &__text {
-      margin: 0;
-      color: $main-text-color;
-      text-decoration: none;
-
-      a {
-        color: $main-text-color;
-        text-decoration: underline;
-
-        &:hover {
-          opacity: 0.8;
-        }
+      &:hover {
+        opacity: 0.8;
       }
     }
-
+  }
 }
